@@ -1,112 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nudo | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nudo | Portfolio</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      color: white;
-      font-family: 'Lilita One', sans-serif;
-      text-align: center;
-      padding: 60px;
-    }
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(120deg, #f6f7fb, #eef2ff);
+    color: #111827;
+    overflow-x: hidden;
+  }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+  }
 
-    .subtitle {
-      opacity: 0.7;
-      margin-bottom: 40px;
-    }
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeDown 1s ease;
+  }
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
+  h1 {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
 
-    h2 {
-      margin-top: 40px;
-    }
+  .subtitle {
+    color: #6b7280;
+    margin-top: 8px;
+  }
 
-    .skills span {
-      display: inline-block;
-      margin: 5px;
-      padding: 8px 12px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.08);
-      font-size: 14px;
-    }
+  /* Cards */
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeUp 0.8s ease;
+  }
 
-    footer {
-      margin-top: 50px;
-      opacity: 0.5;
-      font-size: 12px;
-    }
-  </style>
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  /* Skills */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skill {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.2s;
+  }
+
+  .skill:hover {
+    transform: scale(1.05);
+  }
+
+  /* Projects */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .project {
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .project:hover {
+    transform: translateY(-6px);
+    border-color: #6366f1;
+  }
+
+  .tag {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 13px;
+    color: #9ca3af;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
+  <header>
     <h1>Nudo</h1>
-    <p class="subtitle">Web Developer | Game Builder | AI Explorer</p>
+    <div class="subtitle">Web Developer • Game Builder • Creative Learner</div>
+  </header>
 
-    <div class="card">
-      <p>
-        I started my coding journey around 3 years ago. Since then, I’ve been building and learning across different environments — from small Roblox projects to experimenting with 2D and 3D game ideas, and exploring various online game systems.
-        <br><br>
-        I’ve worked on creative gameplay concepts and system design, learning how mechanics and interactions work in real projects.
-        <br><br>
-        Right now, I’m focused on improving my skills in web development and programming, and turning ideas into real projects.
-      </p>
+  <div class="card">
+    I started coding almost 3 years ago. Since then I’ve been exploring game development, Roblox systems, and web development.
+    I enjoy building things that feel alive, even if they are small experiments.
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript (learning)</div>
+    <div class="skill">Roblox Development</div>
+    <div class="skill">Game Design</div>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <b>For Almost 3 Years</b>
+      <div class="tag">My coding journey & experiments</div>
     </div>
 
-    <h2>What I’ve explored</h2>
-
-    <div class="skills">
-      <span>🎮 Roblox Development</span>
-      <span>🕹️ 2D Game Ideas</span>
-      <span>🎯 3D Game Concepts</span>
-      <span>🌐 HTML</span>
-      <span>🎨 CSS</span>
-      <span>⚙️ JavaScript (learning)</span>
-      <span>🧠 Game Design Thinking</span>
+    <div class="project">
+      <b>Roblox Systems</b>
+      <div class="tag">Gameplay mechanics & scripting experiments</div>
     </div>
 
-    <h2>Current Focus</h2>
-
-    <div class="card">
-      <p>
-        → Building real websites<br>
-        → Improving JavaScript skills<br>
-        → Creating portfolio projects<br>
-        → Learning how systems work in real apps
-      </p>
+    <div class="project">
+      <b>Web Experiments</b>
+      <div class="tag">Small HTML/CSS/JS projects while learning</div>
     </div>
-
-    <footer>
-      Always learning. Always building.
-    </footer>
 
   </div>
+
+  <footer>
+    Always learning. Always building.
+  </footer>
+
+</div>
 
 </body>
 </html>
