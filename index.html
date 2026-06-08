@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Nudo | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
   * {
@@ -16,15 +16,15 @@
 
   body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(120deg, #f6f7fb, #eef2ff);
-    color: #111827;
+    background: linear-gradient(135deg, #0b0f14, #151a22);
+    color: #e5e7eb;
     overflow-x: hidden;
   }
 
   .container {
     max-width: 900px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 70px 20px;
   }
 
   header {
@@ -34,36 +34,44 @@
   }
 
   h1 {
-    font-size: 44px;
-    font-weight: 600;
-    letter-spacing: -1px;
+    font-family: 'Lilita One', cursive;
+    font-size: 56px;
+    letter-spacing: 1px;
+    color: #f9fafb;
   }
 
   .subtitle {
-    color: #6b7280;
-    margin-top: 8px;
+    color: #9ca3af;
+    margin-top: 10px;
+    font-size: 15px;
   }
 
-  /* Cards */
+  /* Card */
   .card {
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 22px;
     margin: 20px 0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
     animation: fadeUp 0.8s ease;
+    color: #d1d5db;
+    line-height: 1.6;
   }
 
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    transform: translateY(-6px);
+    border-color: rgba(99, 102, 241, 0.5);
   }
 
   h2 {
     margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 22px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #f3f4f6;
+    letter-spacing: 0.5px;
   }
 
   /* Skills */
@@ -74,16 +82,18 @@
   }
 
   .skill {
-    background: #e0e7ff;
-    color: #3730a3;
+    background: rgba(99, 102, 241, 0.15);
+    color: #c7d2fe;
     padding: 6px 12px;
-    border-radius: 20px;
+    border-radius: 999px;
     font-size: 13px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
     transition: 0.2s;
   }
 
   .skill:hover {
     transform: scale(1.05);
+    background: rgba(99, 102, 241, 0.25);
   }
 
   /* Projects */
@@ -94,22 +104,22 @@
   }
 
   .project {
-    background: white;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 18px;
     border-radius: 14px;
-    border: 1px solid #e5e7eb;
-    transition: 0.3s;
+    transition: 0.3s ease;
     cursor: pointer;
   }
 
   .project:hover {
     transform: translateY(-6px);
-    border-color: #6366f1;
+    border-color: rgba(99, 102, 241, 0.5);
   }
 
   .tag {
     font-size: 12px;
-    color: #6b7280;
+    color: #9ca3af;
     margin-top: 8px;
   }
 
@@ -117,7 +127,7 @@
     text-align: center;
     margin-top: 60px;
     font-size: 13px;
-    color: #9ca3af;
+    color: #6b7280;
   }
 
   /* Animations */
@@ -144,7 +154,7 @@
 
   <div class="card">
     I started coding almost 3 years ago. Since then I’ve been exploring game development, Roblox systems, and web development.
-    I enjoy building things that feel alive, even if they are small experiments.
+    I enjoy building things that feel alive, even if they are small experiments. My focus is always improving, learning, and shipping real projects.
   </div>
 
   <h2>Skills</h2>
@@ -159,26 +169,24 @@
   <h2>Projects</h2>
 
   <div class="projects">
-
     <div class="project">
-      <b>For Almost 3 Years</b>
-      <div class="tag">My coding journey & experiments</div>
+      <b>3-Year Coding Journey</b>
+      <div class="tag">Continuous learning & experimentation</div>
     </div>
 
     <div class="project">
       <b>Roblox Systems</b>
-      <div class="tag">Gameplay mechanics & scripting experiments</div>
+      <div class="tag">Gameplay mechanics & scripting systems</div>
     </div>
 
     <div class="project">
       <b>Web Experiments</b>
-      <div class="tag">Small HTML/CSS/JS projects while learning</div>
+      <div class="tag">HTML/CSS/JS prototypes and ideas</div>
     </div>
-
   </div>
 
   <footer>
-    Always learning. Always building.
+    Always learning. Always building. Always improving.
   </footer>
 
 </div>
