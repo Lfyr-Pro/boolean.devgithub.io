@@ -2,110 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nudo | Portfolio</title>
 
-  <!-- Lilita One font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Lilita One', cursive;
-      color: #1f2937;
-
-      /* soft pro background */
-      background: radial-gradient(circle at top, #dbeafe, transparent 40%),
-                  radial-gradient(circle at bottom, #ede9fe, transparent 40%),
-                  #f5f7fb;
-      min-height: 100vh;
+      background: black;
+      color: white;
+      font-family: 'Lilita One', sans-serif;
+      text-align: center;
+      padding: 60px;
     }
 
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 80px 20px;
-      text-align: center;
     }
 
-    /* NAME */
     h1 {
       font-size: 32px;
-      margin: 0;
-      letter-spacing: 1px;
-      transition: 0.3s ease;
-    }
-
-    h1:hover {
-      transform: scale(1.05);
+      margin-bottom: 10px;
     }
 
     .subtitle {
-      margin-top: 10px;
-      color: #6b7280;
-      font-size: 18px;
+      opacity: 0.7;
+      margin-bottom: 40px;
     }
 
-    /* STORY CARD */
     .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    h2 {
       margin-top: 40px;
-      background: rgba(255,255,255,0.7);
-      border: 1px solid rgba(255,255,255,0.4);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 25px;
-      font-size: 18px;
-      line-height: 1.7;
-
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      transition: 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-    }
-
-    /* SECTION TEXT */
-    .section-title {
-      margin-top: 50px;
-      font-size: 22px;
-      color: #111827;
-    }
-
-    /* SKILLS */
-    .skills {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .skill {
-      background: #eef2ff;
-      color: #3730a3;
-      padding: 8px 14px;
-      border-radius: 999px;
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
       font-size: 14px;
-      transition: 0.2s ease;
-    }
-
-    .skill:hover {
-      transform: scale(1.08);
-      background: #6366f1;
-      color: white;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 13px;
-      color: #9ca3af;
-      opacity: 0.8;
+      margin-top: 50px;
+      opacity: 0.5;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -115,31 +67,39 @@
   <div class="container">
 
     <h1>Nudo</h1>
-    <div class="subtitle">Web Developer • Game Builder • Learner</div>
+    <p class="subtitle">Web Developer | Game Builder | AI Explorer</p>
 
     <div class="card">
-      I started my coding journey around 3 years ago.  
-      Since then, I’ve been exploring how games, systems, and websites work.
-
-      <br><br>
-
-      I began with small experiments in Roblox development and simple game ideas.  
-      Over time, I started understanding how logic, mechanics, and structure come together in real projects.
-
-      <br><br>
-
-      Right now, I’m focused on improving my web development skills and building things step by step — learning by doing, not just watching.
+      <p>
+        I started my coding journey around 3 years ago. Since then, I’ve been building and learning across different environments — from small Roblox projects to experimenting with 2D and 3D game ideas, and exploring various online game systems.
+        <br><br>
+        I’ve worked on creative gameplay concepts and system design, learning how mechanics and interactions work in real projects.
+        <br><br>
+        Right now, I’m focused on improving my skills in web development and programming, and turning ideas into real projects.
+      </p>
     </div>
 
-    <div class="section-title">What I’ve explored</div>
+    <h2>What I’ve explored</h2>
 
     <div class="skills">
-      <div class="skill">Roblox Development</div>
-      <div class="skill">Game Ideas</div>
-      <div class="skill">System Thinking</div>
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript (learning)</div>
+      <span>🎮 Roblox Development</span>
+      <span>🕹️ 2D Game Ideas</span>
+      <span>🎯 3D Game Concepts</span>
+      <span>🌐 HTML</span>
+      <span>🎨 CSS</span>
+      <span>⚙️ JavaScript (learning)</span>
+      <span>🧠 Game Design Thinking</span>
+    </div>
+
+    <h2>Current Focus</h2>
+
+    <div class="card">
+      <p>
+        → Building real websites<br>
+        → Improving JavaScript skills<br>
+        → Creating portfolio projects<br>
+        → Learning how systems work in real apps
+      </p>
     </div>
 
     <footer>
