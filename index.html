@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nudo | Portfolio</title>
 
+  <!-- Lilita One font -->
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
   <style>
@@ -14,11 +15,10 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Lilita One', cursive;
       color: #1f2937;
-      line-height: 1.6;
 
-      /* PRO background */
+      /* soft pro background */
       background: radial-gradient(circle at top, #dbeafe, transparent 40%),
                   radial-gradient(circle at bottom, #ede9fe, transparent 40%),
                   #f5f7fb;
@@ -26,151 +26,87 @@
     }
 
     .container {
-      max-width: 850px;
+      max-width: 800px;
       margin: auto;
-      padding: 70px 20px;
-    }
-
-    header {
+      padding: 80px 20px;
       text-align: center;
-      margin-bottom: 50px;
-      animation: fadeDown 0.8s ease-out;
     }
 
+    /* NAME */
     h1 {
-      font-size: 46px;
+      font-size: 32px;
       margin: 0;
-      font-weight: 700;
-      letter-spacing: -1px;
+      letter-spacing: 1px;
       transition: 0.3s ease;
     }
 
     h1:hover {
       transform: scale(1.05);
-      text-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     .subtitle {
-      margin-top: 8px;
+      margin-top: 10px;
       color: #6b7280;
-      font-size: 16px;
+      font-size: 18px;
     }
 
-    /* GLASS CARD */
+    /* STORY CARD */
     .card {
-      background: rgba(255, 255, 255, 0.7);
+      margin-top: 40px;
+      background: rgba(255,255,255,0.7);
       border: 1px solid rgba(255,255,255,0.4);
       backdrop-filter: blur(10px);
       border-radius: 16px;
-      padding: 22px;
-      margin: 20px 0;
+      padding: 25px;
+      font-size: 18px;
+      line-height: 1.7;
 
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(99,102,241,0.15), transparent);
-      transition: 0.6s;
-    }
-
-    .card:hover::before {
-      left: 100%;
+      transition: 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      margin-top: 40px;
+    /* SECTION TEXT */
+    .section-title {
+      margin-top: 50px;
       font-size: 22px;
       color: #111827;
     }
 
     /* SKILLS */
     .skills {
+      margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
-      margin-top: 15px;
     }
 
     .skill {
-      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      background: #eef2ff;
       color: #3730a3;
-      padding: 7px 14px;
+      padding: 8px 14px;
       border-radius: 999px;
-      font-size: 13px;
-      cursor: default;
-      transition: all 0.25s ease;
-      border: 1px solid rgba(99,102,241,0.2);
+      font-size: 14px;
+      transition: 0.2s ease;
     }
 
     .skill:hover {
       transform: scale(1.08);
       background: #6366f1;
       color: white;
-      box-shadow: 0 10px 20px rgba(99,102,241,0.3);
-    }
-
-    /* LINKS */
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      position: relative;
-      font-weight: 500;
-      transition: 0.3s ease;
-    }
-
-    a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0%;
-      height: 2px;
-      background: #2563eb;
-      transition: 0.3s ease;
-    }
-
-    a:hover {
-      color: #1d4ed8;
-    }
-
-    a:hover::after {
-      width: 100%;
     }
 
     footer {
-      text-align: center;
       margin-top: 60px;
       font-size: 13px;
       color: #9ca3af;
       opacity: 0.8;
     }
-
-    /* ANIMATIONS */
-    @keyframes fadeDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
   </style>
 </head>
 
@@ -178,43 +114,36 @@
 
   <div class="container">
 
-    <header>
-      <h1>Nudo</h1>
-      <div class="subtitle">Web Developer • Game Builder • Learner</div>
-    </header>
+    <h1>Nudo</h1>
+    <div class="subtitle">Web Developer • Game Builder • Learner</div>
 
     <div class="card">
-      I started coding around 3 years ago. Since then I’ve explored different areas like Roblox development, small game ideas, and web development.
+      I started my coding journey around 3 years ago.  
+      Since then, I’ve been exploring how games, systems, and websites work.
+
       <br><br>
-      I enjoy learning how systems work and turning ideas into simple working projects.
+
+      I began with small experiments in Roblox development and simple game ideas.  
+      Over time, I started understanding how logic, mechanics, and structure come together in real projects.
+
       <br><br>
-      Right now I’m focusing on improving my web development skills and building real projects step by step.
+
+      Right now, I’m focused on improving my web development skills and building things step by step — learning by doing, not just watching.
     </div>
 
-    <h2>Skills</h2>
+    <div class="section-title">What I’ve explored</div>
+
     <div class="skills">
+      <div class="skill">Roblox Development</div>
+      <div class="skill">Game Ideas</div>
+      <div class="skill">System Thinking</div>
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript (learning)</div>
-      <div class="skill">Roblox Development</div>
-      <div class="skill">Game Design</div>
-    </div>
-
-    <h2>Projects</h2>
-
-    <div class="card">
-      <b>Portfolio Website</b><br>
-      A simple personal website built with HTML and CSS.<br><br>
-      <a href="#">GitHub Link</a>
-    </div>
-
-    <div class="card">
-      <b>Game Experiments</b><br>
-      Small Roblox and game concept experiments while learning development.
     </div>
 
     <footer>
-      Always learning, always building.
+      Always learning. Always building.
     </footer>
 
   </div>
